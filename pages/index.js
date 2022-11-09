@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import {BsFillMoonStarsFill} from 'react-icons/bs'
-import {AiFillTwitterCircle, AiFillLinkedin} from 'react-icons/ai'
+import {AiFillGithub, AiFillLinkedin} from 'react-icons/ai'
 import Typewriter from 'typewriter-effect';
 
 export default function Home() {
@@ -15,9 +15,9 @@ export default function Home() {
 
       <main>
         <section className="bg-gray-800 min-h-screen"> 
-        <nav className="py-10 mb-12 flex justify-between">
-          <h1 className="text-xl text-black">logo?</h1>
-          <ul className="flex items-center">
+        <nav className="py-10 mb-12 flex justify-between pr-3">
+          <h1 className="text-xl text-black"></h1>
+          <ul className="flex items-right">
              <li className="px-2">About</li>
              <li className="px-2">Experience</li>
              <li className="px-2">Projects</li>
@@ -27,35 +27,26 @@ export default function Home() {
             </li>
           </ul>
         </nav>
-        <div className="text-black text-center p-10"> 
-        <Typewriter
-        onInit={(typewriter) => {
-          typewriter.typeString('Hello World!')
-            .callFunction(() => {
-              console.log('String typed out!');
-            })
-            .pauseFor(2500)
-            .deleteAll()
-            .callFunction(() => {
-              console.log('All strings were deleted');
-            })
-            .start();
-        }}
-      />
+        <div className="text-gray-300"> 
         </div>
-        <div className="text-black text-center p-10">
-          <h2 className="text-2xl py-2 font-medium">Developer and Designer</h2>
+        <div className="text-gray-300 pl-6 pr-6">
+          <h4 className=" text-cyan-500 text-left">Hi, my name is</h4>
+          <h1 className="text-4xl py-2 font-medium">Christian Rojas</h1>
           <p className="text-md py-5 leading-8">
-            Developer with a passion for building applications that benefit the user. My experience ranges from web development, to mobile and web application development.
+            I'm a software developer with a passion for building applications that 
+            are accessible to all users. My experience ranges from web development, 
+            to mobile and web application development. Currently, 
+            I am building web solutions for Logical Position.
           </p>
         </div>
         <div className="text-5xl flex justify-center gap-15 py-3 text-gray-600">
-          <AiFillLinkedin/>
+          <a className="hover:animate-pulse delay-10000000" href="https://linkedin.com/in/christian-rojas09"><AiFillLinkedin/></a>
+          <a className="hover:animate-pulse delay-10000000" href="https://github.com/CHRISTIANROJAS09"><AiFillGithub/></a>
         </div>
         </section>
 
         <section className="text-black text-center p-10 bg-gray-800 min-h-screen">
-          <h3 className="text-3xl py-1">My skills</h3>
+          <h3 className="text-3xl py-1">About Me</h3>
           <p className="text-md py-3 leading-8">Over the years, I have cultivated my 
           development skills in these languages:</p>
           <div>
