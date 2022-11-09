@@ -22,12 +22,7 @@ export default function Home() {
              <li className="px-2">Projects</li>
              <li className="px-2">Contact</li>
             <li>
-              <script>
-                function download() {
-                  const URL
-                }
-              </script>
-              <a className="bg-green-400 text-xl px-4 py-2 rounded-md ml-8" href="/public/ChristianRojasResume_22.pdf" target="_blank" rel="noopener noreferrer"><button>Resume</button></a>
+              <a className="bg-green-400 text-xl px-4 py-2 rounded-md ml-8" href="/ChristianRojasResume_22.pdf" target="_blank" rel="noopener noreferrer"><button>Resume</button></a>
             </li>
           </ul>
         </nav>
