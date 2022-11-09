@@ -17,12 +17,12 @@ export default function Home() {
         <nav className="py-10 mb-12 flex justify-between pr-3">
           <h1 className="text-xl"></h1>
           <ul className="flex items-right">
-             <Link href="/#aboutme"><li className="px-2">About</li></Link>
-             <Link href="#experience"><li className="px-2">Experience</li></Link>
-             <li className="px-2">Projects</li>
-             <li className="px-2">Contact</li>
+             <Link href="/#aboutme"><li className="px-2 hover:shadow-2xl">About</li></Link>
+             <Link href="#experience"><li className="px-2 hover:shadow-2xl">Experience</li></Link>
+             <li className="px-2 hover:shadow-2xl">Projects</li>
+             <li className="px-2 hover:shadow-2xl">Contact</li>
             <li>
-              <a className="bg-green-400 text-xl px-4 py-2 rounded-md ml-8" href="/ChristianRojasResume_22.pdf" target="_blank" rel="noopener noreferrer"><button>Resume</button></a>
+              <a className="bg-green-400 text-xl px-4 py-2 rounded-md ml-8 hover:shadow-2xl" href="/ChristianRojasResume_22.pdf" target="_blank" rel="noopener noreferrer"><button>Resume</button></a>
             </li>
           </ul>
         </nav>
@@ -45,8 +45,9 @@ export default function Home() {
         </section>
 
         <section id="aboutme" className="text-gray-300 text-left bg-gray-800 min-h-screen pl-6 pr-6 font-sans">
-          <div className="pr-10 font-sans">
-            <h3 className="text-3xl py-1 font-bold">About Me</h3>
+          <div className="pr-10 font-sans hover:shadow-2xl pb-5">
+            <h3 className="text-4xl font-extrabold dark:text-gray-300 py-1">About Me</h3>
+            <hr class="my-8 h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>
             <div className="pr-10 font-sans">
             <p className="text-md py-3 leading-8">Hi! my name is Christian. I have mostly grown up on the internet, having learned my first language (HTML) at 17 years old. The interest in software started when I was
             building small websites in my school computer lab because I loved the idea of being able to build anything I could think up.
@@ -99,14 +100,56 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-
             </div>
           </div>
         </section>
 
-        <section id="experience">
+        <section id="experience" className="ext-gray-300 text-left bg-gray-800 min-h-screen pl-6 pr-6">
+          <div className="hover:shadow-2xl pb-5">
+          <h2 className="text-4xl font-extrabold dark:text-gray-300 py-1">My Experience</h2>         
 
+          <div className="pl-8">
+            <h4 className="text-3xl">Front End Developer II at <span class="text-blue-600 dark:text-blue-500">Logical Position</span></h4>
+            <hr class="my-8 h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>
+          </div>
+          <div className="flex pl-15">
+            <ul className="pl-8">
+              <li className="list-disc">
+                Develop web application tools for internal use. These deliverables 
+                were used to automate simple processes to improve efficiency.
+              </li>
+              <li className="list-disc">
+                Work with a variety of different languages, platforms, and frameworks such as JavaScript, React, WordPress,
+                Shopify, and Vercel to name a few.
+              </li>
+              <li className="list-disc">
+                Communicated with analysts, QA, and account managers on a daily basis to provide consulting, and recieve project information.
+              </li>
+              <li className="list-disc">
+                Lead research on new client sites and their back-end to gauge the scope of work 
+                necessary to complete the project, and the tools necessary.
+              </li>
+            </ul>
+            </div>
+            <div className="pt-20 pl-8">
+            <h4 className="text-3xl">Bachelors in Computer Science <span class="text-blue-600 dark:text-blue-500">Southern New Hampshire University</span></h4>
+            <hr class="my-8 h-px bg-gray-200 border-0 dark:bg-gray-700"></hr>
+          </div>
+          <div className="flex pl-15">
+            <ul className="pl-8 pb-5">
+              <li className="list-disc">
+                3.2 GPA
+              </li>
+              <li className="list-disc">
+                Expected graduation date: April 2023
+              </li>
+            </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          
         </section>
       </main>
     </div>
